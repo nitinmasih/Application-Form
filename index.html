@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration Form</header>
+
+        <form action="#" novalidate>
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" />
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" />
+                        </div>
+                        <div class="input-field">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Enter your E-mail" />
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile number</label>
+                            <input type="number" placeholder="Enter mobile number" />
+                        </div>
+                        <div class="input-field">
+                            <label for="gender">Choose your gender:</label>
+
+                            <select id="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Trangender">Trangender</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your Occupation" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID type</label>
+                            <input type="text" placeholder="Enter ID type" />
+                        </div>
+                        <div class="input-field">
+                            <label> ID number</label>
+                            <input type="number" placeholder="Enter ID number" />
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter Issued Date" />
+                        </div>
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter Issued State" />
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Athority</label>
+                            <input type="text" placeholder="Enter Issued Athority" />
+                        </div>
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" />
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details family">
+                    <span class="title">Family Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father's Name</label>
+                            <input type="text" placeholder="Enter father's name" required />
+                        </div>
+                        <div class="input-field">
+                            <label> Mother's Name</label>
+                            <input type="text" placeholder="Enter mother's name" required />
+                        </div>
+                        <div class="input-field">
+                            <label> Temopary Address</label>
+                            <input type="text" placeholder="Enter Temopary Address" required />
+                        </div>
+                        <div class="input-field">
+                            <label>Permanent Address</label>
+                            <input type="text" placeholder="Enter Permanent Address" required />
+                        </div>
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter District name" required />
+                        </div>
+                        <div class="input-field">
+                            <label>City/Village</label>
+                            <input type="text" placeholder="Enter your City/Village" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Bank Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Bank's name</label>
+                            <input type="text" placeholder="Enter bank's name" required />
+                        </div>
+                        <div class="input-field">
+                            <label> Branch's name</label>
+                            <input type="text" placeholder="Enter branch's name" />
+                        </div>
+                        <div class="input-field">
+                            <label>IFSC Code</label>
+                            <input type="text" placeholder="Enter IFSC Code" />
+                        </div>
+                        <div class="input-field">
+                            <label>Account number</label>
+                            <input type="text" placeholder="Enter Account number" />
+                        </div>
+                        <div class="input-field">
+                            <label>Name on Passbook</label>
+                            <input type="text" placeholder="Enter name on passbook" />
+                        </div>
+                        <div class="input-field">
+                            <label>Enter PAN</label>
+                            <input type="text" placeholder="Enter PAN " />
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Previous</span>
+                        </button>
+                        <button class="SubmitBtn">
+                            <span class="btnText">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

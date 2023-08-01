@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4070f4;
+}
+.container{
+    position: relative;
+    background: #fff;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
+
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.container form{
+    position: relative;
+    min-height: 490px;
+    background: #f2f2f2; 
+    margin-top: 16px;
+    
+}
+.container form .form{
+    position: absolute;
+    background: #fff;
+}
+ .form.second{
+    opacity: 0;
+    pointer-events: none;
+}
+form.seactive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+}
+form.seactive .form.first{
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.container header::before{
+    content: "";
+    width: 27px;
+    color: #4070f4;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+}
+.container form .details{
+    margin-top: 10px;
+}
+.container form .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0px;
+    color: #333;
+    display: inline-block;
+}
+.fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+.fields .input-field{
+   display: flex;
+   flex-direction: column;
+   width: calc(100% / 3 - 15px);
+}
+.input-field label{
+    font-size: 13px;
+    font-weight: 500;
+    color: #2e2e2e;
+    margin: 8px 0px;
+}
+   
+
+.input-field input{
+   height: 42px;
+    padding: 0 15px;
+  outline: none;
+  border: 1px solid #aaa;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+}
+.input-field input:is(:focus, :valid){
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.input-field input[type="date"]{
+    color:#707070
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.input-field select{
+    height: 42px;
+    padding: 0 15px;
+  outline: none;
+  border: 1px solid #aaa;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #4070f4;
+    height: 45px;
+    margin: 25px 0;
+    border-radius: 5px;
+    color: #fff;
+    max-width: 200px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.container .btnText{
+    font-size: 15px;
+    margin: 0 8px 0px;
+}
+
+form button:hover{
+ background-color: #265df2;
+}
+.buttons{
+    display: flex;
+    
+}
+.backBtn i{
+    transform: rotate(180deg);
+}
+
+form .SubmitBtn{
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
